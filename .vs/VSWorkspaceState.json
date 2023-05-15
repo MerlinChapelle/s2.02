@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TavernManager",
+    "\\TavernManagerMetier",
+    "\\TavernManagerMetier\\Metier",
+    "\\TavernManagerMetier\\Metier\\Algorithmes",
+    "\\TavernManagerMetier\\Metier\\Algorithmes\\Graphes",
+    "\\TavernManagerMetier\\Metier\\Algorithmes\\Realisations"
   ],
-  "SelectedNode": "\\C:\\Users\\merli\\OneDrive\\Bureau\\TP\\git s2.02",
+  "SelectedNode": "\\TavernManagerMetier\\Metier\\Algorithmes\\Realisations\\AlgorithmeChacunSaTable.cs",
   "PreviewInSolutionExplorer": false
 }
