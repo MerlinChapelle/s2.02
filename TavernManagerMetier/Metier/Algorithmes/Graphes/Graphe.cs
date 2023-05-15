@@ -14,10 +14,17 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
 
         
 
-        private void ChangerCouleur(Sommet sommet,int couleur) 
+        private void AjouterCouleur(Sommet sommet,int couleur) 
         {
             couleurs.Add(sommet, couleur);
         }
+
+        private void changerCouleur(Sommet sommet, int couleur)
+        {
+            couleurs[sommet] = couleur ;
+        }
+
+
         private void AjouterSommet(Client client,Sommet sommet)
         {
            if(!this.sommets.ContainsKey(client)) 
@@ -39,7 +46,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
             sommets = new Dictionary<Client, Sommet>();
             foreach(Client client in taverne.Clients) { AjouterSommet(client, new Sommet()); }
             foreach(Client client2 in taverne.Clients) { foreach (Client ennemie in client2.Ennemis) { sommets[client2].AjouterVoisin(sommets[ennemie]);  } }
-            foreach (Sommet sommet in Sommets) { ChangerCouleur(sommet, 0); }
+            foreach (Sommet sommet in Sommets) { AjouterCouleur(sommet, 0); }
         }
     }
 }
