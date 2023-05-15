@@ -8,6 +8,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
 {
     internal class Sommet
     { private List<Sommet> voisins;
+      
         public List<Sommet> Voisins { get { return voisins; } }
 
 
