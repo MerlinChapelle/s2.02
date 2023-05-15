@@ -7,7 +7,7 @@ using TavernManagerMetier.Metier.Tavernes;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Graphes
 {
-    internal class Graphe
+    public class Graphe
     { private Dictionary<Client, Sommet> sommets;
         private Dictionary<Sommet,int> couleurs; 
         public List<Sommet> Sommets => this.sommets.Values.Distinct().ToList<Sommet>();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Graphes
 {
-    internal class Sommet
+    public class Sommet
     {
         private List<Sommet> voisins;
         private int nbClients;

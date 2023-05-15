@@ -54,3 +54,31 @@ C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManager\obj\Debug\net6.0-windo
 C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.pdb
 C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.genruntimeconfig.cache
 C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManager\obj\Debug\net6.0-windows\ref\TavernManager.dll
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.csproj.AssemblyReference.cache
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\Vues\FenetreCreationTaverne.g.cs
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\Vues\FenetrePrincipale.g.cs
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager_MarkupCompile.cache
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager_MarkupCompile.lref
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.dll
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\refint\TavernManager.dll
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.pdb
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\bin\Debug\net6.0-windows\TavernManager.exe
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\bin\Debug\net6.0-windows\TavernManager.deps.json
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\bin\Debug\net6.0-windows\TavernManager.runtimeconfig.json
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\bin\Debug\net6.0-windows\TavernManager.dll
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\bin\Debug\net6.0-windows\TavernManager.pdb
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\bin\Debug\net6.0-windows\TavernManagerMetier.dll
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\bin\Debug\net6.0-windows\TavernManagerMetier.pdb
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\App.baml
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\Vues\FenetreCreationTaverne.baml
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\Vues\FenetrePrincipale.baml
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.g.resources
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.AssemblyInfoInputs.cache
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.AssemblyInfo.cs
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.csproj.CoreCompileInputs.cache
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.csproj.CopyComplete
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\TavernManager.genruntimeconfig.cache
+C:\Users\noahr\Source\Repos\s2.02\TavernManager\obj\Debug\net6.0-windows\ref\TavernManager.dll

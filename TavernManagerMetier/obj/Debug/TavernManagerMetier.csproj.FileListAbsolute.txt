@@ -1,12 +1,6 @@
-C:\Users\merli\OneDrive\Bureau\TP\s2.02\TableManager\TavernManagerMetier\bin\Debug\TavernManagerMetier.dll
-C:\Users\merli\OneDrive\Bureau\TP\s2.02\TableManager\TavernManagerMetier\bin\Debug\TavernManagerMetier.pdb
-C:\Users\merli\OneDrive\Bureau\TP\s2.02\TableManager\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.AssemblyReference.cache
-C:\Users\merli\OneDrive\Bureau\TP\s2.02\TableManager\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.CoreCompileInputs.cache
-C:\Users\merli\OneDrive\Bureau\TP\s2.02\TableManager\TavernManagerMetier\obj\Debug\TavernManagerMetier.dll
-C:\Users\merli\OneDrive\Bureau\TP\s2.02\TableManager\TavernManagerMetier\obj\Debug\TavernManagerMetier.pdb
-C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.dll
-C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.pdb
-C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.AssemblyReference.cache
-C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.CoreCompileInputs.cache
-C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.dll
-C:\Users\merli\OneDrive\Bureau\TP\git s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.pdb
+C:\Users\noahr\Source\Repos\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.AssemblyReference.cache
+C:\Users\noahr\Source\Repos\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.CoreCompileInputs.cache
+C:\Users\noahr\Source\Repos\s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.dll
+C:\Users\noahr\Source\Repos\s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.pdb
+C:\Users\noahr\Source\Repos\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.dll
+C:\Users\noahr\Source\Repos\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.pdb

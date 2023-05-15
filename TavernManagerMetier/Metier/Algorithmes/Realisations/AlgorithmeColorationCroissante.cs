@@ -11,23 +11,42 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 {
     public class AlgorithmeColorationCroissante: IAlgorithme
     {
+        private long tempsExecution = -1;
         public string Nom => "Coloration Croissante";
 
-        private long tempsExecution;
-        public long TempsExecution => -1;
+        public long TempsExecution { get; }
+        public Graphe graphe;
+        private Stopwatch sw;
 
         public void Executer(Taverne taverne)
-        {  Stopwatch stopwatch = Stopwatch.StartNew();
-           Graphe graphe = new Graphe(taverne);
-            for (int i=0;i<taverne.Clients.Count();i++)
+        {
+            sw = new Stopwatch();
+            sw.Start();
+            this.graphe = new Graphe(taverne);
+            taverne.AjouterTable();
+            taverne.AjouterClientTable(0, 0);
+            for (int i = 1; i < taverne.Clients.Count(); i++)
             {
-                
-                taverne.AjouterTable();
-                taverne.AjouterClientTable(i, i) ;
+                for (int j = 0; j < taverne.NombreTables; j++)
+                {
+                    for (int k = 1; k < taverne.Tables[j].Clients.Count(); k++)
+                    {
+
+                        if (taverne.Clients[i].EstEnnemisAvec(taverne.Clients[k]))
+                        {
+                            taverne.AjouterClientTable(i, j);
+                        }
+                        else
+                        {
+                            taverne.AjouterTable();
+                            taverne.AjouterClientTable(i, taverne.NombreTables);
+                        }
+                    }
+
+                }
             }
-            stopwatch.Stop();
-            this.tempsExecution = stopwatch.ElapsedMilliseconds;
-            Console.WriteLine(TempsExecution);
+            sw.Stop();
+            this.tempsExecution = sw.ElapsedMilliseconds;
         }
     }
 }
