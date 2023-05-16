@@ -26,28 +26,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\noahr\\.nuget\\packages\\": {},
+    "C:\\Users\\vm009962\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\noahr\\Source\\Repos\\s2.02\\TavernManager\\TavernManager.csproj",
+      "projectUniqueName": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
       "projectName": "TavernManager",
-      "projectPath": "C:\\Users\\noahr\\Source\\Repos\\s2.02\\TavernManager\\TavernManager.csproj",
-      "packagesPath": "C:\\Users\\noahr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\noahr\\Source\\Repos\\s2.02\\TavernManager\\obj\\",
+      "projectPath": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
+      "packagesPath": "C:\\Users\\vm009962\\.nuget\\packages\\",
+      "outputPath": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\noahr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vm009962\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -57,8 +57,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\noahr\\Source\\Repos\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
-              "projectPath": "C:\\Users\\noahr\\Source\\Repos\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj"
+            "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
+              "projectPath": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj"
             }
           }
         }
@@ -78,8 +78,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -91,7 +90,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

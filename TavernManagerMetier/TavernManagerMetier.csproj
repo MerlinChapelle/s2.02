@@ -60,6 +60,7 @@
     <Compile Include="Metier\Algorithmes\Graphes\Sommet.cs" />
     <Compile Include="Metier\Algorithmes\IAlgorithme.cs" />
     <Compile Include="Metier\Algorithmes\Realisations\AlgorithmeColorationCroissante.cs" />
+    <Compile Include="Metier\Algorithmes\Realisations\AlgorithmeLDO.cs" />
     <Compile Include="Metier\Algorithmes\Realisations\AlgorithmeWelshPowell.cs" />
     <Compile Include="Metier\Algorithmes\Realisations\AlgorithmeDSATUR.cs" />
     <Compile Include="Metier\Algorithmes\Realisations\AlgorithmeChacunSaTable.cs" />

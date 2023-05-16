@@ -14,13 +14,19 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
 
         public List<Sommet> Voisins { get { return voisins; } }
 
-
-        public Sommet() 
+        /// <summary>
+        /// Constructeur du sommet
+        /// </summary>
+       public Sommet() 
         {
             voisins = new List<Sommet>();
             nbClients = 0;
         }
 
+        /// <summary>
+        /// Ajoute un sommet voisin à la liste des voisins.
+        /// </summary>
+        /// <param name="sommet">Le sommet voisin à ajouter.</param>
         public void AjouterVoisin(Sommet sommet)
         {
             voisins.Add(sommet);
