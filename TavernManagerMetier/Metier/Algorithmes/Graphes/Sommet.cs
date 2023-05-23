@@ -18,10 +18,10 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
         /// Constructeur du sommet
         /// </summary>
        public Sommet() 
-        {
+       {
             voisins = new List<Sommet>();
             nbClients = 0;
-        }
+       }
 
         /// <summary>
         /// Ajoute un sommet voisin à la liste des voisins.

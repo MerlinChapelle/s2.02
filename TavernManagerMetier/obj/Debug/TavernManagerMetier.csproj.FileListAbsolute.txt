@@ -10,3 +10,9 @@ C:\Users\noahr\Source\Repos\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMet
 \\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\vm009962\Semestre 2\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.CoreCompileInputs.cache
 \\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\vm009962\Semestre 2\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.dll
 \\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\vm009962\Semestre 2\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.pdb
+U:\vm009962\Semestre 2\s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.dll
+U:\vm009962\Semestre 2\s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.pdb
+U:\vm009962\Semestre 2\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.AssemblyReference.cache
+U:\vm009962\Semestre 2\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.CoreCompileInputs.cache
+U:\vm009962\Semestre 2\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.dll
+U:\vm009962\Semestre 2\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.pdb

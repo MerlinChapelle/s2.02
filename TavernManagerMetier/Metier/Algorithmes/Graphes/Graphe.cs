@@ -7,6 +7,9 @@ using TavernManagerMetier.Metier.Tavernes;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Graphes
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Graphe
     {
         /// <summary>
@@ -35,7 +38,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
         /// <param name="couleur">La couleur à attribuer au sommet.</param>
         public void AjouterCouleur(Sommet sommet, int couleur)
         {
-            couleurs.Add(sommet, couleur);
+            Couleurs.Add(sommet, couleur);
         }
 
 
@@ -47,7 +50,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
         /// <param name="couleur">La nouvelle couleur à attribuer au sommet.</param>
         public void ChangerCouleur(Sommet sommet, int couleur)
         {
-            couleurs[sommet] = couleur;
+            Couleurs[sommet] = couleur;
         }
 
 
@@ -89,7 +92,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
             sommets = new Dictionary<Client, Sommet>();
             couleurs = new Dictionary<Sommet, int>();
             foreach (Client client in taverne.Clients) { AjouterSommet(client, new Sommet()); }
-            foreach(Client client2 in taverne.Clients) { foreach (Client ennemie in client2.Ennemis) { sommets[client2].AjouterVoisin(sommets[ennemie]);  } }
+            foreach(Client client2 in taverne.Clients) { foreach (Client ennemie in client2.Ennemis) { /* sommets[client2].AjouterVoisin(sommets[ennemie])*/ AjouterArette(client2, ennemie);  } }
             foreach (Sommet sommet in Sommets) { AjouterCouleur(sommet, 0); }
         }
     }
