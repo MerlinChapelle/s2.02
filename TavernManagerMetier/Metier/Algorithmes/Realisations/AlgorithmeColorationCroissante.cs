@@ -42,7 +42,6 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
                             taverne.AjouterClientTable(i, taverne.NombreTables);
                         }
                     }
-
                 }
             }
             sw.Stop();
