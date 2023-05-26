@@ -14,7 +14,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
         public string Nom => "WelshPowell";
 
         private long tempsExecution;
-        public long TempsExecution => -1;
+        public long TempsExecution { get { return tempsExecution; } set { tempsExecution = value; } }
         private Stopwatch sw;
 
         public void Executer(Taverne taverne)
@@ -64,8 +64,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
                 taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);
             }
             sw.Stop();
-            this.tempsExecution = sw.ElapsedMilliseconds;
-            Console.WriteLine(TempsExecution);
+            TempsExecution = sw.ElapsedMilliseconds;
         }
     }
 }

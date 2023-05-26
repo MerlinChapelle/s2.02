@@ -17,7 +17,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
     {
         private long tempsExecution = -1;
         public string Nom => "LDO";
-        public long TempsExecution { get; }
+        public long TempsExecution { get { return tempsExecution; } set { tempsExecution = value; } }
         public Graphe graphe;
         private Stopwatch sw;
 
@@ -45,21 +45,8 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             {
                 taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);              //On ajoute le client i sur la table
             }
-
-            /*if (taverne.NombreTables >= 1)
-            {
-                throw new ExceptionNumeroTableInconnu(1);
-            }
-            foreach (Sommet sommet in graphe.Sommets)
-            {
-                if (sommet.NbClients > taverne.CapactieTables)
-                {
-                    throw new ExceptionTablePleine();
-                }
-            }
-            */
             sw.Stop();
-            this.tempsExecution = sw.ElapsedMilliseconds;
+            TempsExecution = sw.ElapsedMilliseconds;
         }
     }
 }

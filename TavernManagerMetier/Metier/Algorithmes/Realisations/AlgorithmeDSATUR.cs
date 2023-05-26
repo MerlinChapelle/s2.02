@@ -17,7 +17,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
         public string Nom => "DSATUR";
 
         private long tempsExecution;
-        public long TempsExecution { get; }
+        public long TempsExecution { get { return tempsExecution; } set { tempsExecution = value; } }
 
         private Graphe graphe;
         private Stopwatch sw;
@@ -26,7 +26,8 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
         ///Execute l'algorithme Welsh Powell
         ///</summary>
         public void Executer(Taverne taverne)
-        {   sw = new Stopwatch();
+        {   
+            sw = new Stopwatch();
             sw.Start();
             graphe = new Graphe(taverne);
             List<Sommet> sommets = graphe.Sommets;
@@ -100,9 +101,9 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
                 
             }
 
-                sw.Stop();
-            this.tempsExecution = sw.ElapsedMilliseconds;
-            
+            sw.Stop();
+            TempsExecution = sw.ElapsedMilliseconds;
+
         }
 
     }
