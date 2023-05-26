@@ -27,6 +27,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             List<Sommet> sommets = graphe.Sommets.OrderBy(sommet => sommet.Voisins.Count).ToList();
             bool voisincolorie = false;
             int couleurEnCour = 1;
+            graphe.testTaverne();
             while (graphe.Couleurs.Values.Contains(0))
             {
                 List<Sommet> sommetsaretirer = new List<Sommet>();
@@ -61,7 +62,14 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             }
             for (int i = 0; i < graphe.Sommets.Count(); i++)
             {
-                taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);
+                foreach (Client client in graphe.dictSommets.Keys)
+                {
+                    if (graphe.dictSommets[client] == graphe.Sommets[i])
+                    {
+                        taverne.AjouterClientTable(client.Numero, graphe.Couleurs[graphe.Sommets[i]] - 1);
+                    }
+                }
+
             }
             sw.Stop();
             this.tempsExecution = sw.ElapsedMilliseconds;

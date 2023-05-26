@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TavernManagerMetier.Exceptions.Realisations.GestionTaverne;
 using TavernManagerMetier.Metier.Tavernes;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Graphes
@@ -92,21 +93,39 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
             Couleurs[sommet] = couleur;
         }
 
+        /// <summary>
+        /// choisis la couleur la plus basse possible a atribuer au sommet passé en parametre 
+        /// </summary>
+        /// <param name="sommet">sommet que l'on veux colorier </param>
         public void Colorier(Sommet sommet) 
         {
-            List<int> couleur =new List<int>();
-            int min = 1;
+            List<int> couleur =new List<int>();                                                                 //liste de la couleur des voisins
+            int min = 1;                                                                                        //couleur que l'on va chercher a donner au sommet
             foreach(Sommet voisin in sommet.Voisins)
-            {
+            {                                                                                                   //on rempli la liste de couleur des voisins
                 couleur.Add(couleurs[voisin]);
             }
-            while ((couleur.Contains(min))||(nbcouleurs[min]+1>tailletalbes)) { min++; }
+            while ((couleur.Contains(min))||(nbcouleurs[min]+1>tailletalbes)) { min++; }                        // tant que la couleur actuel est utilisé par un voisin ou est plein : on passe a la couleur suivante
 
-            Couleurs[sommet] = min;
-            if (!nbcouleurs.ContainsKey(min+1)) { nbcouleurs.Add(min+1, 0); }
-            this.nbcouleurs[min] += 1;
+            Couleurs[sommet] = min;                                                                             // on change la couleur de notre sommet
+            if (!nbcouleurs.ContainsKey(min+1)) { nbcouleurs.Add(min+1, 0); }                                   //si le dictionnaire qui stock le nombre d'utilisation par couleur ne contion pas de clé pour la couleur superieur a celle utilisé : on l'ajoute en l'initialisant a 0;
+            this.nbcouleurs[min] += sommet.NbClients;                                                           //on incrémente le nombre de la couleur utilisé du nombre de client dans le sommet 
         }
-
+        /// <summary>
+        /// test qui vérifie que la taverne dans laquel on essaye
+        /// de travailler possede une solution 
+        /// </summary>
+        /// <exception cref="Exception">Exception levé si la taverne n'admet pas de solution</exception>
+        public void testTaverne()                                                                                 
+        { 
+            foreach(Sommet sommet in Sommets)                                                                   // pour tout les sommet 
+            {
+                if (sommet.Voisins.Contains(sommet))                                                            //si le sommet en cours est son propre énemie
+                {
+                    throw new ExceptionPasDeSolution();                                                          // on arrete tout
+                }
+            }
+        }
         /// <summary>
         /// Génération du graphe à partir de la taverne
         /// </summary>

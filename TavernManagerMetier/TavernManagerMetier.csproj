@@ -55,6 +55,7 @@
     <Compile Include="Exceptions\Realisations\GestionDesTables\ExceptionTablePleine.cs" />
     <Compile Include="Exceptions\Realisations\GestionTaverne\ExceptionNumeroClientInconnu.cs" />
     <Compile Include="Exceptions\Realisations\GestionTaverne\ExceptionNumeroTableInconnu.cs" />
+    <Compile Include="Exceptions\Realisations\Graphe\ExceptionPasDeSolution.cs" />
     <Compile Include="Metier\Algorithmes\AlgorithmeManager.cs" />
     <Compile Include="Metier\Algorithmes\Graphes\Graphe.cs" />
     <Compile Include="Metier\Algorithmes\Graphes\Sommet.cs" />

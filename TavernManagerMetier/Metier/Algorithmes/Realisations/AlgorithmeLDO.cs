@@ -29,7 +29,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             Graphe graphe = new Graphe(taverne);
             Array.Clear(taverne.Tables, 0, taverne.NombreTables);
             List<Sommet> sommets = graphe.Sommets.OrderBy(sommet=>sommet.Voisins.Count).ToList();
-
+            graphe.testTaverne();
             foreach (Sommet sommet in sommets)
             {
                 graphe.Colorier(sommet);
@@ -40,7 +40,14 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             }
             for (int i = 0; i < graphe.Sommets.Count(); i++)
             {
-                taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);
+                foreach (Client client in graphe.dictSommets.Keys)
+                {
+                    if (graphe.dictSommets[client] == graphe.Sommets[i])
+                    {
+                        taverne.AjouterClientTable(client.Numero, graphe.Couleurs[graphe.Sommets[i]] - 1);
+                    }
+                }
+
             }
 
             /*if (taverne.NombreTables >= 1)

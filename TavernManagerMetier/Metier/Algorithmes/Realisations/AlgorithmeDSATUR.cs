@@ -25,14 +25,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             sw.Start();
             graphe = new Graphe(taverne);
             List<Sommet> sommets = graphe.Sommets;
-
-            foreach(Sommet sommet in sommets)
-            {
-                if (sommet.Voisins.Contains(sommet))
-                {
-                    throw new Exception();
-                }
-            }
+            graphe.testTaverne();
             while (graphe.Couleurs.ContainsValue(0))
             {
                 Sommet sommetChoisit = sommets[0];
