@@ -9,6 +9,9 @@ using TavernManagerMetier.Metier.Tavernes;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 {
+    ///<summary>
+    ///Algorithme DSATUR
+    ///</summary>
     public class AlgorithmeDSATUR : IAlgorithme
     {
         public string Nom => "DSATUR";
@@ -18,7 +21,9 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 
         private Graphe graphe;
 
-
+        ///<summary>
+        ///Execute l'algorithme Welsh Powell
+        ///</summary>
         public void Executer(Taverne taverne)
         {  Stopwatch stopwatch = Stopwatch.StartNew();
             graphe = new Graphe(taverne);
