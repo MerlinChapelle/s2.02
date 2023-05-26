@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "U:\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj": {}
+    "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj": {}
   },
   "projects": {
-    "U:\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
+    "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
       "restore": {
-        "projectUniqueName": "U:\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj",
+        "projectUniqueName": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj",
         "projectName": "TavernManagerMetier",
-        "projectPath": "U:\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj",
+        "projectPath": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -19,14 +19,14 @@
         "net472": {}
       }
     },
-    "U:\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj": {
+    "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
+        "projectUniqueName": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
         "projectName": "TavernManager",
-        "projectPath": "U:\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
+        "projectPath": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
         "packagesPath": "C:\\Users\\vm009962\\.nuget\\packages\\",
-        "outputPath": "U:\\vm009962\\Semestre 2\\s2.02\\TavernManager\\obj\\",
+        "outputPath": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,8 +47,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "U:\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
-                "projectPath": "U:\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj"
+              "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
+                "projectPath": "\\\\iut21.u-bourgogne.fr\\racine\\dijon\\enseignement\\etudiants\\INFO-DIJ\\BUT-INFO-DIJ-1\\vm009962\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj"
               }
             }
           }
@@ -80,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.308\\RuntimeIdentifierGraph.json"
         }
       }
     }

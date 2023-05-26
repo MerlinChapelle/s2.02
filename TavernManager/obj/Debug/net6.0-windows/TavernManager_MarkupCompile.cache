@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-U:\vm009962\Semestre 2\s2.02\TavernManager\obj\Debug\net6.0-windows\
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\vm009962\Semestre 2\s2.02\TavernManager\obj\Debug\net6.0-windows\
 TavernManager
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-U:\vm009962\Semestre 2\s2.02\TavernManager\App.xaml
+\\iut21.u-bourgogne.fr\racine\dijon\enseignement\etudiants\INFO-DIJ\BUT-INFO-DIJ-1\vm009962\Semestre 2\s2.02\TavernManager\App.xaml
 2-254390647
 
 12-980313087
-1951082810717
+1951284333718
 Vues\FenetreCreationTaverne.xaml;Vues\FenetrePrincipale.xaml;
 vues\ressources\tavernmanager.jpg
 False

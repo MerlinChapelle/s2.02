@@ -92,7 +92,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
             sommets = new Dictionary<Client, Sommet>();
             couleurs = new Dictionary<Sommet, int>();
             foreach (Client client in taverne.Clients) { AjouterSommet(client, new Sommet()); }
-            foreach(Client client2 in taverne.Clients) { foreach (Client ennemie in client2.Ennemis) { /* sommets[client2].AjouterVoisin(sommets[ennemie])*/ AjouterArette(client2, ennemie);  } }
+            foreach(Client client2 in taverne.Clients) { foreach (Client ennemie in client2.Ennemis) { sommets[client2].AjouterVoisin(sommets[ennemie]);  } }
             foreach (Sommet sommet in Sommets) { AjouterCouleur(sommet, 0); }
         }
     }
