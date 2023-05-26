@@ -23,6 +23,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             Graphe graphe = new Graphe(taverne);
             int c = 1; 
             int j = 0;
+            int t = 0;
             bool voisincolorie = false;
             while (graphe.Couleurs.Values.Contains(0) ) 
             {
@@ -31,22 +32,32 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
                  
                 for (int i = 0; i < graphe.Sommets.Count(); i++)
                 {
+                    Sommet x = graphe.Sommets[i];
                     j = 0;
                     voisincolorie = false;
                     
-                    while ( (voisincolorie == false) && ( j < graphe.Sommets[i].Voisins.Count() ) )
+                   /* while ( (voisincolorie == false) && ( j < x.Voisins.Count() ) )
                     {
-                        if (graphe.Couleurs[graphe.Sommets[i].Voisins[j]] == c)
+                        if (graphe.Couleurs[x.Voisins[j]] == c)
                         {
                             voisincolorie = true;
                         }
                         j++;
                     }
-                    
+                    */
                     if (voisincolorie == false)
                     {
-                        graphe.ChangerCouleur(graphe.Sommets[i], c);
-                        taverne.AjouterClientTable(i, c - 1);
+                        graphe.ChangerCouleur(x, c);
+                        t++;
+                        if ( t < taverne.CapactieTables)
+                            taverne.AjouterClientTable(i, c - 1);
+                        else
+                        {
+                            t = 0;
+                            taverne.AjouterTable();
+                            c++;
+                            taverne.AjouterClientTable(i, c - 1);
+                        }
                     }
                     
                 }
