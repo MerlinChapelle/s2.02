@@ -62,7 +62,7 @@ namespace TavernManagerMetier.Metier.Tavernes
             //On lève une exception si le numéro client n'a pas de sens
             if (numeroClient < 0 || numeroClient > this.clients.Count || this.clients[numeroClient] == null) throw new ExceptionNumeroClientInconnu(numeroClient);
             //On lève une exception si le numéro de table n'a pas de sens
-            if (numeroTable < 0 || numeroTable > this.tables.Count || this.tables[numeroTable] == null) throw new ExceptionNumeroTableInconnu(numeroTable);
+            if (numeroTable < 0 || numeroTable > this.tables.Count /*|| this.tables[numeroTable] == null*/) throw new ExceptionNumeroTableInconnu(numeroTable);
 
             //On change le client de table
             this.clients[numeroClient].ChangerTable(this.tables[numeroTable]);
