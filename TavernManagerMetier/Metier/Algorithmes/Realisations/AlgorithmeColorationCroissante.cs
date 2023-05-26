@@ -32,7 +32,19 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             sw.Start();
             Graphe graphe = new Graphe(taverne);
             Array.Clear(taverne.Tables, 0, taverne.NombreTables);
-            if (taverne.NombreTables >= 1)
+            foreach (Sommet sommet in graphe.Sommets)
+            {
+                graphe.Colorier(sommet);
+            }
+            for (int i = 0; i < graphe.Couleurs.Values.Max(); i++)
+            {
+                taverne.AjouterTable();
+            }
+            for (int i = 0; i < graphe.Sommets.Count(); i++)
+            {
+                taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);
+            }
+            /*if (taverne.NombreTables >= 1)
             {
                 throw new ExceptionNumeroTableInconnu(1);
             }
@@ -43,18 +55,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
                     throw new ExceptionTablePleine();
                 }
             }
-            int table = 0;
-            for (int sommet = 0; sommet < graphe.Sommets.Count(); sommet++)
-            {
-                taverne.AjouterTable();
-                graphe.ChangerCouleur(graphe.Sommets[sommet], sommet + 1);
-                for (int client = 0; client < graphe.Sommets[sommet].NbClients; client++)
-                {
-                    taverne.AjouterClientTable(client, table);
-                    break;
-                }
-                table++;
-            }
+            */
             sw.Stop();
             this.tempsExecution = sw.ElapsedMilliseconds;
         }

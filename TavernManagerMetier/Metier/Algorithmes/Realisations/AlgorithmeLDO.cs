@@ -12,20 +12,49 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 {
     public class AlgorithmeLDO : IAlgorithme
     {
+        private long tempsExecution = -1;
         public string Nom => "LDO";
+        public long TempsExecution { get; }
+        public Graphe graphe;
+        private Stopwatch sw;
 
-        private long tempsExecution;
-        public long TempsExecution => -1;
-
-         /// <summary>
+        /// <summary>
         /// Execute l'algorithme LDO
         /// </summary>
         /// <param name="taverne"></param>
         public void Executer(Taverne taverne)
         {
-            AlgorithmeColorationCroissante original = new AlgorithmeColorationCroissante();
-            taverne.Clients.OrderByDescending(s => s.Ennemis.Count).ToList();
-            original.Executer(taverne);
+            sw = new Stopwatch();
+            sw.Start();
+            Graphe graphe = new Graphe(taverne);
+            Array.Clear(taverne.Tables, 0, taverne.NombreTables);
+            foreach (Sommet sommet in graphe.Sommets)
+            {
+                graphe.Colorier(sommet);
+            }
+            for (int i = 0; i > graphe.Couleurs.Values.Max(); i--)
+            {
+                taverne.AjouterTable();
+            }
+
+            for (int i = 0; i < graphe.Sommets.Count(); i++)
+            {
+                taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);
+            }
+            /*if (taverne.NombreTables >= 1)
+            {
+                throw new ExceptionNumeroTableInconnu(1);
+            }
+            foreach (Sommet sommet in graphe.Sommets)
+            {
+                if (sommet.NbClients > taverne.CapactieTables)
+                {
+                    throw new ExceptionTablePleine();
+                }
+            }
+            */
+            sw.Stop();
+            this.tempsExecution = sw.ElapsedMilliseconds;
         }
     }
 }
