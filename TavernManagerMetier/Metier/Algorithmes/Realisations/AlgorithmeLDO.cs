@@ -28,19 +28,21 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             sw.Start();
             Graphe graphe = new Graphe(taverne);
             Array.Clear(taverne.Tables, 0, taverne.NombreTables);
-            foreach (Sommet sommet in graphe.Sommets)
+            List<Sommet> sommets = graphe.Sommets.OrderBy(sommet=>sommet.Voisins.Count).ToList();
+
+            foreach (Sommet sommet in sommets)
             {
                 graphe.Colorier(sommet);
             }
-            for (int i = 0; i > graphe.Couleurs.Values.Max(); i--)
+            for (int i = 0; i < graphe.Couleurs.Values.Max(); i++)
             {
                 taverne.AjouterTable();
             }
-
             for (int i = 0; i < graphe.Sommets.Count(); i++)
             {
                 taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);
             }
+
             /*if (taverne.NombreTables >= 1)
             {
                 throw new ExceptionNumeroTableInconnu(1);
