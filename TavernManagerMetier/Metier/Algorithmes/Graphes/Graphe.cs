@@ -22,6 +22,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
         /// Liste des sommets distincts dans le dictionnaire de sommets.
         /// </summary>
         public List<Sommet> Sommets => this.sommets.Values.Distinct().ToList<Sommet>();
+        public Dictionary<Client, Sommet> dictSommets { get; }
 
         private Dictionary<Sommet, int> couleurs;
         private Dictionary<int, int> nbcouleurs =new Dictionary<int, int>();
@@ -30,6 +31,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
             get { return couleurs; } 
             set { value = couleurs; } 
         }
+
 
 
         /// <summary>
@@ -48,7 +50,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
         /// </summary>
         /// <param name="client">Le client associé au sommet à ajouter.</param>
         /// <param name="sommet">Le sommet à ajouter.</param>
-        private void AjouterSommet(Client client, Sommet sommet)
+        public void AjouterSommet(Client client, Sommet sommet)
         {
             if (!this.sommets.ContainsKey(client))
             {

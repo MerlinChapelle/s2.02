@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\TavernManager",
-    "\\TavernManagerMetier",
-    "\\TavernManagerMetier\\Metier",
-    "\\TavernManagerMetier\\Metier\\Algorithmes",
-    "\\TavernManagerMetier\\Metier\\Algorithmes\\Graphes",
-    "\\TavernManagerMetier\\Metier\\Algorithmes\\Realisations"
+    ""
   ],
-  "SelectedNode": "\\TavernManagerMetier\\Metier\\Algorithmes\\Realisations\\AlgorithmeChacunSaTable.cs",
+  "SelectedNode": "\\TavernManager.sln",
   "PreviewInSolutionExplorer": false
 }
