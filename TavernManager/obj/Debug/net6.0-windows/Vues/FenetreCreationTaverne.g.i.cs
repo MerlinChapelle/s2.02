@@ -101,7 +101,7 @@ namespace TavernManager.Vues {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TavernManager;component/vues/fenetrecreationtaverne.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TavernManager;V1.0.0.0;component/vues/fenetrecreationtaverne.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vues\FenetreCreationTaverne.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
