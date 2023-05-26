@@ -26,23 +26,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\merli\\.nuget\\packages\\": {}
+    "C:\\Users\\Clément Malindi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\merli\\Desktop\\git\\s2.02\\TavernManager\\TavernManager.csproj",
+      "projectUniqueName": "C:\\Users\\Clément Malindi\\Documents\\IUT\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
       "projectName": "TavernManager",
-      "projectPath": "C:\\Users\\merli\\Desktop\\git\\s2.02\\TavernManager\\TavernManager.csproj",
-      "packagesPath": "C:\\Users\\merli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\merli\\Desktop\\git\\s2.02\\TavernManager\\obj\\",
+      "projectPath": "C:\\Users\\Clément Malindi\\Documents\\IUT\\Semestre 2\\s2.02\\TavernManager\\TavernManager.csproj",
+      "packagesPath": "C:\\Users\\Clément Malindi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Clément Malindi\\Documents\\IUT\\Semestre 2\\s2.02\\TavernManager\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\merli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Clément Malindi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -52,8 +57,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\merli\\Desktop\\git\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
-              "projectPath": "C:\\Users\\merli\\Desktop\\git\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj"
+            "C:\\Users\\Clément Malindi\\Documents\\IUT\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj": {
+              "projectPath": "C:\\Users\\Clément Malindi\\Documents\\IUT\\Semestre 2\\s2.02\\TavernManagerMetier\\TavernManagerMetier.csproj"
             }
           }
         }
@@ -73,7 +78,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -85,7 +91,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

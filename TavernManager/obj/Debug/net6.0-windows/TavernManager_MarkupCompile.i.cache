@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\merli\Desktop\git\s2.02\TavernManager\obj\Debug\net6.0-windows\
+C:\Users\Clément Malindi\Documents\IUT\Semestre 2\s2.02\TavernManager\obj\Debug\net6.0-windows\
 TavernManager
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\merli\Desktop\git\s2.02\TavernManager\App.xaml
+C:\Users\Clément Malindi\Documents\IUT\Semestre 2\s2.02\TavernManager\App.xaml
 2-254390647
 
 14-820790309
-195427776148
+195-2099791861
 Vues\FenetreCreationTaverne.xaml;Vues\FenetrePrincipale.xaml;
 vues\ressources\tavernmanager.jpg
-True
+False
 

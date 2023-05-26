@@ -9,47 +9,46 @@ using TavernManagerMetier.Metier.Tavernes;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 {
-    public class AlgorithmeWelshPowell: IAlgorithme
+    public class AlgorithmeWelshPowell : IAlgorithme
     {
         public string Nom => "WelshPowell";
 
         private long tempsExecution;
         public long TempsExecution => -1;
+        private Stopwatch sw;
 
         public void Executer(Taverne taverne)
         {
-            Stopwatch stopwatch = Stopwatch.StartNew();
+            sw = new Stopwatch();
+            sw.Start();
             taverne.Clients.OrderByDescending(s => s.Ennemis.Count);
             Graphe graphe = new Graphe(taverne);
-            int c = 1; 
+            int c = 1;
             int j = 0;
             int t = 0;
             bool voisincolorie = false;
-            while (graphe.Couleurs.Values.Contains(0) ) 
+            while (graphe.Couleurs.Values.Contains(0))
             {
                 taverne.AjouterTable();
 
-                 
                 for (int i = 0; i < graphe.Sommets.Count(); i++)
                 {
                     Sommet x = graphe.Sommets[i];
                     j = 0;
                     voisincolorie = false;
-                    
-                   /* while ( (voisincolorie == false) && ( j < x.Voisins.Count() ) )
+
+                    foreach (Sommet v in x.Voisins)
                     {
-                        if (graphe.Couleurs[x.Voisins[j]] == c)
+                        if (graphe.Couleurs[v] == c)
                         {
                             voisincolorie = true;
                         }
-                        j++;
                     }
-                    */
                     if (voisincolorie == false)
                     {
                         graphe.ChangerCouleur(x, c);
                         t++;
-                        if ( t < taverne.CapactieTables)
+                        if (t < taverne.CapactieTables)
                             taverne.AjouterClientTable(i, c - 1);
                         else
                         {
@@ -59,12 +58,12 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
                             taverne.AjouterClientTable(i, c - 1);
                         }
                     }
-                    
+
                 }
                 c++;
             }
-            stopwatch.Stop();
-            this.tempsExecution = stopwatch.ElapsedMilliseconds;
+            sw.Stop();
+            this.tempsExecution = sw.ElapsedMilliseconds;
             Console.WriteLine(TempsExecution);
         }
     }
