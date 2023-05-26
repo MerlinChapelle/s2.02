@@ -17,6 +17,10 @@ using TavernManagerMetier.Metier.Tavernes;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 {
+    ///<summary>
+    ///Algorithme de coloration croissante
+    ///</summary>
+
     public class AlgorithmeColorationCroissante: IAlgorithme
     {
         private long tempsExecution = -1;
@@ -26,6 +30,10 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
         public Graphe graphe;
         private Stopwatch sw;
 
+        ///<summary>
+        ///Execute l'algorithme de coloration croissante
+        ///</summary>
+        ///<param name="taverne">La taverne dans laquelle l'algorithme va s'executer</param>
         public void Executer(Taverne taverne)
         {
             sw = new Stopwatch();
@@ -37,11 +45,11 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             {
                 graphe.Colorier(sommet);
             }
-            for (int i = 0; i < graphe.Couleurs.Values.Max(); i++)
+            for (int i = 0; i < graphe.Couleurs.Values.Max(); i++)                              //Pour i allant de 0 au nombre de couleurs dans le graphe
             {
-                taverne.AjouterTable();
+                taverne.AjouterTable();                                                         //On ajoute une table
             }
-            for (int i = 0; i < graphe.Sommets.Count(); i++)
+            for (int i = 0; i < graphe.Sommets.Count(); i++)                                    //Pour i allant de 0 au nombre de sommets dans le graphe
             {
                 foreach (Client client in graphe.dictSommets.Keys)
                 {

@@ -28,7 +28,7 @@ namespace TavernManagerMetier.Metier.Algorithmes.Graphes
         private Dictionary<Sommet, int> couleurs;
         private Dictionary<int, int> nbcouleurs =new Dictionary<int, int>();
         public Dictionary<Sommet, int> Couleurs
-        { 
+        {
             get { return couleurs; } 
             set { value = couleurs; } 
         }

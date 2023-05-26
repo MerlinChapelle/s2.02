@@ -1,6 +1,0 @@
-C:\Users\merli\Desktop\git\s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.dll
-C:\Users\merli\Desktop\git\s2.02\TavernManagerMetier\bin\Debug\TavernManagerMetier.pdb
-C:\Users\merli\Desktop\git\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.AssemblyReference.cache
-C:\Users\merli\Desktop\git\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.csproj.CoreCompileInputs.cache
-C:\Users\merli\Desktop\git\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.dll
-C:\Users\merli\Desktop\git\s2.02\TavernManagerMetier\obj\Debug\TavernManagerMetier.pdb

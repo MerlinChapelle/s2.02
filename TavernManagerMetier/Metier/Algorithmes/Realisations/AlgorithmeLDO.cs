@@ -10,18 +10,21 @@ using TavernManagerMetier.Metier.Tavernes;
 
 namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 {
+    ///<summary>
+    ///Algorithme LDO
+    ///</summary>
     public class AlgorithmeLDO : IAlgorithme
     {
         private long tempsExecution = -1;
         public string Nom => "LDO";
-        public long TempsExecution { get; }
+        public long TempsExecution { get { return tempsExecution; } set { tempsExecution = value; } }
         public Graphe graphe;
         private Stopwatch sw;
 
         /// <summary>
         /// Execute l'algorithme LDO
         /// </summary>
-        /// <param name="taverne"></param>
+        /// <param name="taverne">La taverne dans laquelle l'algorithme va s'executer</param>
         public void Executer(Taverne taverne)
         {
             sw = new Stopwatch();
@@ -32,11 +35,11 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
             graphe.testTaverne();
             foreach (Sommet sommet in sommets)
             {
-                graphe.Colorier(sommet);
+                graphe.Colorier(sommet);                                                            //On colorie les sommets du graphe
             }
-            for (int i = 0; i < graphe.Couleurs.Values.Max(); i++)
+            for (int i = 0; i < graphe.Couleurs.Values.Max(); i++)                                  //Pour i allant de 0 au nombre de couleurs dans le graphe
             {
-                taverne.AjouterTable();
+                taverne.AjouterTable();                                                             //On ajoute une table
             }
             for (int i = 0; i < graphe.Sommets.Count(); i++)
             {
@@ -61,9 +64,8 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
                     throw new ExceptionTablePleine();
                 }
             }
-            */
             sw.Stop();
-            this.tempsExecution = sw.ElapsedMilliseconds;
+            TempsExecution = sw.ElapsedMilliseconds;
         }
     }
 }
