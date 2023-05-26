@@ -19,48 +19,49 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 
         public void Executer(Taverne taverne)
         {
+
             sw = new Stopwatch();
             sw.Start();
             taverne.Clients.OrderByDescending(s => s.Ennemis.Count);
             Graphe graphe = new Graphe(taverne);
-            int c = 1;
-            int j = 0;
-            int t = 0;
+            List<Sommet> sommets = graphe.Sommets.OrderBy(sommet => sommet.Voisins.Count).ToList();
             bool voisincolorie = false;
+            int couleurEnCour = 1;
             while (graphe.Couleurs.Values.Contains(0))
             {
-                taverne.AjouterTable();
-
-                for (int i = 0; i < graphe.Sommets.Count(); i++)
+                List<Sommet> sommetsaretirer = new List<Sommet>();
+                foreach(Sommet sommet in sommets)
                 {
-                    Sommet x = graphe.Sommets[i];
-                    j = 0;
                     voisincolorie = false;
-
-                    foreach (Sommet v in x.Voisins)
+                    int nbcouleur= 0;
+                    foreach (Sommet voisin in sommet.Voisins)
                     {
-                        if (graphe.Couleurs[v] == c)
+                        if (graphe.Couleurs[voisin] == couleurEnCour)
                         {
                             voisincolorie = true;
                         }
                     }
-                    if (voisincolorie == false)
+                    if (!voisincolorie && nbcouleur<taverne.CapactieTables)
                     {
-                        graphe.ChangerCouleur(x, c);
-                        t++;
-                        if (t < taverne.CapactieTables)
-                            taverne.AjouterClientTable(i, c - 1);
-                        else
-                        {
-                            t = 0;
-                            taverne.AjouterTable();
-                            c++;
-                            taverne.AjouterClientTable(i, c - 1);
-                        }
+                        graphe.ChangerCouleur(sommet, couleurEnCour);
+                        sommetsaretirer.Add(sommet);
+                        nbcouleur++;
                     }
-
                 }
-                c++;
+                foreach(Sommet sommet in sommetsaretirer)
+                {
+                    sommets.Remove(sommet);
+                }
+                couleurEnCour++;
+            }
+
+            for (int i = 0; i < graphe.Couleurs.Values.Max(); i++)
+            {
+                taverne.AjouterTable();
+            }
+            for (int i = 0; i < graphe.Sommets.Count(); i++)
+            {
+                taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]] - 1);
             }
             sw.Stop();
             this.tempsExecution = sw.ElapsedMilliseconds;

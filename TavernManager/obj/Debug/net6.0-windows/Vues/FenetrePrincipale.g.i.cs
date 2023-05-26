@@ -133,7 +133,7 @@ namespace TavernManager.Vues {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TavernManager;V1.0.0.0;component/vues/fenetreprincipale.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TavernManager;component/vues/fenetreprincipale.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vues\FenetrePrincipale.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

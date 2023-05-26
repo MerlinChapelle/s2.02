@@ -14,16 +14,25 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
         public string Nom => "DSATUR";
 
         private long tempsExecution;
-        public long TempsExecution => -1;
+        public long TempsExecution { get; }
 
         private Graphe graphe;
+        private Stopwatch sw;
 
 
         public void Executer(Taverne taverne)
-        {  Stopwatch stopwatch = Stopwatch.StartNew();
+        {   sw = new Stopwatch();
+            sw.Start();
             graphe = new Graphe(taverne);
             List<Sommet> sommets = graphe.Sommets;
-            Sommet sommetencours ;
+
+            foreach(Sommet sommet in sommets)
+            {
+                if (sommet.Voisins.Contains(sommet))
+                {
+                    throw new Exception();
+                }
+            }
             while (graphe.Couleurs.ContainsValue(0))
             {
                 Sommet sommetChoisit = sommets[0];
@@ -76,12 +85,19 @@ namespace TavernManagerMetier.Metier.Algorithmes.Realisations
 
             for (int i = 0; i < graphe.Sommets.Count(); i++)
             {
-                taverne.AjouterClientTable(i, graphe.Couleurs[graphe.Sommets[i]]-1);
+                   foreach (Client client in graphe.dictSommets.Keys)
+                    {
+                        if (graphe.dictSommets[client] == graphe.Sommets[i])
+                        {
+                            taverne.AjouterClientTable(client.Numero, graphe.Couleurs[graphe.Sommets[i]]-1);
+                        }
+                    }
+                
             }
 
-                stopwatch.Stop();
-            this.tempsExecution = stopwatch.ElapsedMilliseconds;
-            Console.WriteLine(TempsExecution);
+                sw.Stop();
+            this.tempsExecution = sw.ElapsedMilliseconds;
+            
         }
 
     }
